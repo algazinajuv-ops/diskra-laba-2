@@ -4,7 +4,7 @@
 int *simpleDev(int n, int *count){
     *count = 0;
     int *dividers =NULL;
-    for(int i =2; i<n; i++){
+    for(int i =2; i<=n/i; i++){
         while (n%i ==0){
             int *temp = realloc(dividers, (*count+1)*sizeof(int));
             if (temp == NULL){
